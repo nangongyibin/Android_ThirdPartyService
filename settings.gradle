@@ -1,0 +1,2 @@
+include ':mobtech'
+rootProject.name='ThirdPartyService'
