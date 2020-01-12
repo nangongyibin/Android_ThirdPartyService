@@ -5,6 +5,8 @@ MobSDK {
     appKey "2dca2dc1f9474"
     appSecret "c0e90f68d716249e4b74d575d834a692"
 
+    SMSSDK {}
+
     ShareSDK {
         //平台配置信息
         devInfo {

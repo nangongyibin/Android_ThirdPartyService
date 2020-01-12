@@ -8,8 +8,14 @@
     tools:context=".activity.MainActivity">
 
     <Button
-        android:onClick="sharesdk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="sharesdk"
         android:text="ShareSDK" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="smssdk"
+        android:text="SMSSDK" />
 </LinearLayout>

@@ -20,4 +20,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ShareSDKActivity.class);
         startActivity(intent);
     }
+
+    public void smssdk(View view) {
+        Intent intent = new Intent(this, SMSSDKActivity.class);
+        startActivity(intent);
+    }
 }

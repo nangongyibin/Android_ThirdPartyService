@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ngyb.mobtech">
 
+
     <application
         android:name=".app.MyApplication"
         android:allowBackup="true"
@@ -23,6 +24,9 @@
 
         <activity
             android:name=".activity.ShareSDKActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SMSSDKActivity"
             android:screenOrientation="portrait" />
     </application>
 </manifest>
