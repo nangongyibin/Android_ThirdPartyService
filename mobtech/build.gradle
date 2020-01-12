@@ -1,23 +1,29 @@
 apply plugin: 'com.android.application'
-// 添加插件
+
 apply plugin: 'com.mob.sdk'
-// 注册SecVerify的相关信息
 MobSDK {
-    appKey "29f304b0b0382"
-    appSecret "3c5eccbc80eab6bb5bdc9f155f2f639b"
-    SecVerify {
-        version '2.0.5'
-        disable {
-            CMCC {}
-            CUCC {}
-            CTCC {}
+    appKey "2dca2dc1f9474"
+    appSecret "c0e90f68d716249e4b74d575d834a692"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            Wechat {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+            }
+            QQ {
+                appId "101843385"
+                appKey "85b52c194c6d0fe2ee2367d9ad7f9c30"
+                shareByAppClient true
+            }
         }
     }
 }
+
 android {
     compileSdkVersion 28
     buildToolsVersion "29.0.2"
-
 
     defaultConfig {
         applicationId "com.ngyb.mobtech"
@@ -35,11 +41,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility = 1.8
-        targetCompatibility = 1.8
-    }
-
 }
 
 dependencies {
@@ -49,5 +50,4 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    implementation 'com.google.code.gson:gson:2.8.5'
 }

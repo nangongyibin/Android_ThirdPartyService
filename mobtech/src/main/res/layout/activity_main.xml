@@ -5,12 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="秒验"
-    android:onClick="asecondtest"/>
-
+    <Button
+        android:onClick="sharesdk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ShareSDK" />
 </LinearLayout>
