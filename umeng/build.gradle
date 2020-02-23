@@ -1,35 +1,13 @@
 apply plugin: 'com.android.application'
 
-apply plugin: 'com.mob.sdk'
-MobSDK {
-    appKey "2dca2dc1f9474"
-    appSecret "c0e90f68d716249e4b74d575d834a692"
-
-    SMSSDK {}
-
-    ShareSDK {
-        //平台配置信息
-        devInfo {
-            Wechat {
-                appId "wxf815115ea8d2395b"
-                appSecret "597b79f1f628f375586edf7b4a9cd12d"
-            }
-            QQ {
-                appId "101843385"
-                appKey "85b52c194c6d0fe2ee2367d9ad7f9c30"
-                shareByAppClient true
-            }
-        }
-    }
-}
-
 android {
     compileSdkVersion 28
     buildToolsVersion "29.0.2"
 
+
     defaultConfig {
-        applicationId "com.ngyb.mobtech"
-        minSdkVersion 17
+        applicationId "com.ngyb.umeng"
+        minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -43,13 +21,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation  'com.umeng.umsdk:analytics:8.0.0'
+    implementation  'com.umeng.umsdk:common:2.0.0'
 }

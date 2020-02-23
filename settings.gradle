@@ -1,2 +1,2 @@
-include ':mobtech', ':jiguang'
+include ':mobtech', ':jiguang', ':umeng', ':xfyun'
 rootProject.name='ThirdPartyService'
