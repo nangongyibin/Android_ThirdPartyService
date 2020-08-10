@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Alipay</string>
+    <string name="pay_success">Payment success:</string>
+    <string name="pay_failed">Payment failed:</string>
+    <string name="error_missing_appid_rsa_private">Error: Missing \"APPID\" or \"RSA_PRIVATE\" in MainActivity.</string>
+    <string name="confirm">Confirm</string>
+</resources>
